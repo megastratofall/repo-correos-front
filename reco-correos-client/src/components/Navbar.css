@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #e9c4a0;
+    --second-color: #b9ddff;
+    --text-color: #aff9d3;
+    --main--color: #96badf;
+    --third--color: #ffddb8;
+    --fourth--color: #d9b592;
+    --complementario--color: #1ca381;
+    --complementario2--color: #008f6f;
+    --marronsis--color: #a46b21;
+    --naranjis-color: #f3f3aa;
+    --amarillo--color: #e9a0a0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fuente-uncial);
+    border: none;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: default;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 1.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main--color);
+}
+
+#menu-icon {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    display: none;
+    cursor: pointer;
+}
+
+.logout-btn {
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.logout-btn:hover {
+    color: var(--third--color);
+}
+
+@media(max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar a {
+        display: block;
+        text-align: left;
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+}

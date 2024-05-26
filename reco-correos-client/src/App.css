@@ -1,0 +1,63 @@
+:root {
+  --bg-color: #e9c4a0;
+  --second-color: #b9ddff;
+  --text-color: #aff9d3;
+  --main--color: #96badf;
+  --third--color: #ffddb8;
+  --fourth--color: #d9b592;
+  --complementario--color: #1ca381;
+  --complementario2--color: #008f6f;
+  --marronsis--color: #a46b21;
+  --naranjis-color: #f3f3aa;
+  --amarillo--color: #e9a0a0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+html, body, #root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main--color);
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-content h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.home-content .home-p {
+  font-family: var(--fuente-roboto);
+  font-size: 20px;
+  color: rgb(77, 31, 184);
+  background-color: var(--amarillo--color);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
